@@ -42,16 +42,13 @@ class PrincipalPage extends StatelessWidget {
           actions: <Widget>[
             TextButton(
               onPressed: () {
-                Navigator.of(context).pop(); // Cerrar el cuadro de diálogo
+                Navigator.of(context).pop();
               },
               child: const Text('Cancelar'),
             ),
             TextButton(
               onPressed: () {
-                // Aquí puedes agregar la lógica para cerrar la sesión
-                // Por ejemplo: llamar a una función de cierre de sesión
-                // y luego redirigir al inicio de sesión
-                Navigator.of(context).pop(); // Cerrar el cuadro de diálogo
+                Navigator.of(context).pop();
               },
               child: const Text('Cerrar Sesión'),
             ),
@@ -79,8 +76,7 @@ class PrincipalPage extends StatelessWidget {
               title: const Text('Cerrar Sesión'),
               onTap: () {
                 Navigator.pop(context);
-                showLogoutConfirmationDialog(
-                    context); // Mostrar el cuadro de diálogo al presionar "Cerrar Sesión"
+                showLogoutConfirmationDialog(context);
               },
             ),
           ],
